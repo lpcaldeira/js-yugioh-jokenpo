@@ -215,13 +215,14 @@ async function playAudioBackground() {
   backgroundMusic.play();
 }
 
-function init() {
+// auto-run function
+const init = (function autorun(){
   showHiddenCardFields(false);
 
   drawCards(5, state.handCards.player)
   drawCards(5, state.handCards.computer)
 
   playAudioBackground();
-}
 
-init();
+  return autorun; // return itself to reference
+}());
