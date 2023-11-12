@@ -1,0 +1,12 @@
+* {
+  /* border-box pro navegador medir de borda a borda a tela */
+  box-sizing: border-box;
+  /* os navegadores já tem por padrão as suas margens, então mantive tudo default */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* pro usuário não conseguir ficar selecionando nada na tela */
+  user-select: none;
+  
+  font-family: "Press Start 2P", cursive;
+}
